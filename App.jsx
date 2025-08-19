@@ -16,6 +16,8 @@ import {
 import { useLocalStorage, useOnlineStatus, useToast } from './hooks/useLocalStorage'
 import { validateInputs, calculateTCO, TRUCK_CONFIGS, formatCurrency, formatNumber, formatPercentage } from './utils/calculations'
 import { generateTCOReport, exportDataAsJSON } from './utils/pdfGenerator'
+import './styles/form.css'
+import './styles/components.css'
 
 export default function App() {
   // Estados principales

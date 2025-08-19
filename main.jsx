@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import './index.css'
+import './styles/layout.css'
 import { registerSW } from 'virtual:pwa-register'
 
 // Registrar Service Worker con actualización automática
