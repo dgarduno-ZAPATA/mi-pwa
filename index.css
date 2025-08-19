@@ -381,24 +381,36 @@ body {
   }
 }
 
-/* Print styles */
-@media print {
-  .header,
-  .status-bar,
-  .actions {
-    display: none;
-  }
-  
-  .app {
-    max-width: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .form-section,
-  .results {
-    box-shadow: none;
-    border: 1px solid var(--border);
-    page-break-inside: avoid;
-  }
+/* Cost breakdown styles */
+.cost-breakdown {
+  margin: 2rem 0;
 }
+
+.breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.breakdown-item {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem;
+  background: var(--background);
+  border-radius: 8px;
+}
+
+.breakdown-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.category-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.category-percentage {
